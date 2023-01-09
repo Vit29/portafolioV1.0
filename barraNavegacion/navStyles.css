@@ -1,0 +1,25 @@
+.nav__container{
+    color :rgb(146, 142, 138);
+}
+.nav__lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+.nav__lista a{
+    text-decoration: none;
+    color: inherit;
+    transition: .5s;
+}
+.nav__lista-link{
+    padding: 10px;    
+    transition: 5ms;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.nav__lista-link:hover{
+    color: black;
+    background-color: rgba(187, 182, 177, 0.774);
+}
+

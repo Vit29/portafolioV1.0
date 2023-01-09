@@ -1,5 +1,4 @@
 .mi__foto__container{
-    /* position: relative; */
     width: 100%; 
 } 
 .img__vitaly{
@@ -7,15 +6,12 @@
     border-radius:50%;
 }
 .container-nombre{
-    /* position: absolute; */
-    /* top: 65%; */
     color: rgb(146, 142, 138);
     font-family:'Anton', sans-serif;
     letter-spacing: 0.7rem;
     text-align: center;
     width: 100vw;
     margin-top: -9rem;
-    padding-left: 1rem;
 }
 .saludo{
    letter-spacing: 0.9rem;
@@ -32,4 +28,11 @@
 .nombre-apellido-titulo{
     letter-spacing: 1rem;
 }
-    
+.container__sobre__mi{
+    width: 100vm;
+}
+.sobre__mi{
+    color: rgba(187, 182, 177, 0.774);
+    text-align: justify;
+    padding: 1rem;
+}

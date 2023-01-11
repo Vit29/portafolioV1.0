@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="barraNavegacion/navJS.js">
     <link rel="stylesheet" href="stylesBody.css">
     <link rel="stylesheet" href="barraNavegacion/navStyles.css">
     <link rel="stylesheet" href="StylesBanner/responsiveBanner.css">
@@ -19,16 +20,25 @@
 
 <body>
     <header>
-        <nav class="nav__container">
-            <ul class="nav__lista">
-                <a class="nav__lista-link" href="#">Sobre mi</a>
+        <div class="nav__container">
+            <div class="toggle"><span></span></div>
+            <div>
+                <ul>
+                    <li style="--1:0;"><a href="#">Sobre mi</a></li>
+                    <li style="--1:1;"><a href="#">Skills</a></li>
+                    <li style="--1:2;"><a href="#">Hobbies</a></li>
+                    <li style="--1:3;"><a href="#">Fomacion</a></li>
+                    <li style="--1:4;"><a href="#">Proyectos</a></li>
+                    <li style="--1:5;"><a href="#">Contacto</a></li>
+                </ul>
+                <!-- <a class="nav__lista-link" href="#">Sobre mi</a>
                 <a class="nav__lista-link" href="#">Skills</a>
-                <!-- <a class="nav__lista-link" href="#">Hobbies</a>
-                <a class="nav__lista-link" href="#">Fomacion</a> -->
+                <a class="nav__lista-link" href="#">Hobbies</a>
+                <a class="nav__lista-link" href="#">Fomacion</a>
                 <a class="nav__lista-link" href="#">Proyectos</a>
-                <a class="nav__lista-link" href="#">Contacto</a>
-            </ul>
-        </nav>
+                <a class="nav__lista-link" href="#">Contacto</a> -->
+            </div>
+        </div>
     </header>
     <section class="containaer__ecabezado">
         <div class="mi__foto__container ">
@@ -61,7 +71,7 @@
                 <a class="logo-whatsup" href="https://es-la.facebook.com/">
                     <img class="logo-whatsup" src="logo/whatsup-logo.png" alt="whatsup-logo"></a>
             </div> -->
-    
+
             <div class="pulsante color">
                 <a class="logo-youtube" href="https://www.youtube.com/">
                     <img class="logo-youtube" src="logo/youtube-logo.png" alt="youtube-logo"></a>
@@ -70,7 +80,8 @@
     </section>
     <section class="container__sobre__mi">
         <p class="sobre__mi">Sobre mi</p>
-        <p class="sobre__mi"> Persona comunicativa, trabajadora, amable y capaz de adaptarse a cada situación. Busco una oportunidad
+        <p class="sobre__mi"> Persona comunicativa, trabajadora, amable y capaz de adaptarse a cada situación. Busco una
+            oportunidad
             laboral en la que demostrar mi compromiso y capacidad de trabajo. En mis empleos anteriores siempre he
             destacado por mi buena productividad y mi capacidad de aprender rápidamente. Joven, con pasión por la
             profesión, facilidad para el trabajo en equipo.
@@ -80,7 +91,7 @@
             Desearía encontrar una oportunidad para adquirir más experiencia profesional.
         </p>
     </section>
-   
+    <script src="barraNavegacion/navJS.js"></script>
 </body>
 
 </html>

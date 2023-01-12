@@ -37,13 +37,11 @@
     width: 100%;
     color: rgba(204, 200, 197, 0.774);
     font-family: 'Antonio', sans-serif;
-    
-}
-.sobre__mi{
-    background-color: rgb(37, 37, 37);
     text-align: justify;
+    padding: 0 10px; 
+} 
+.sobre__mi{
+    background-color: rgba(37, 37, 37, 0.295);
+    border-radius: 20px;
     padding: 1rem;
-}
-.sobre__mi:nth-child(1){
-    font-size: 1.5rem;
 }

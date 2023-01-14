@@ -95,6 +95,6 @@ ul li a{
 }
 ul li a:hover{
     background: #f6f6f6;
-    color: #ff216d;
+    color: red;
     transition: 0s;
 }

@@ -19,12 +19,6 @@
     -webkit-text-stroke: 0.3vw gray;
     text-transform: uppercase;    
 }
-h1{
-    color: gray;
-    text-align: center;
-    margin: 2rem 0;
-
-}
 .saludo{
    letter-spacing: 0.9rem;
    -webkit-text-stroke: 0;
@@ -42,18 +36,44 @@ h1{
 .nombre-apellido-titulo{
     letter-spacing: 1rem;
     color: gray;
-    -webkit-text-stroke: 0;
 }
-.container__sobre__mi{
-    width: 100%;
-    height: 100vh;
-    color: rgba(204, 200, 197, 0.774);
-    text-align: justify;
-    padding: 0 10px;
-} 
-.sobre__mi{
-    background-color: rgba(37, 37, 37, 0.295);
-    border-radius: 20px;
-    padding: 1rem;
-    font-family: 'Antonio', sans-serif;
+
+@media (min-width: 1024px) {
+    .mi__foto__container {
+        position: relative;
+    }
+
+    .container__foto {
+        width: 50%;
+    }
+
+    .container-nombre {
+        position: absolute;
+        top: 17rem;
+        left: 18rem;
+    }
+
+    .saludo {
+        letter-spacing: 0.9rem;
+        color: gray;
+        font-size: 1.5rem;
+    }
+
+    div .nombre {
+        font-size: 10rem;
+        letter-spacing: 4rem;
+    }
+
+    div .nombre-apellido-paterno {
+        font-size: 7rem;
+        letter-spacing: 3rem;
+        margin-top: -0.5em;
+    }
+
+    .nombre-apellido-titulo {
+        letter-spacing: 1rem;
+        color: gray;
+        -webkit-text-stroke: 0;
+        font-size: 1.5rem;
+    }
 }

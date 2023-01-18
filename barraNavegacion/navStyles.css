@@ -5,7 +5,6 @@
     height: 20px;
     width: 100px;
     z-index: 100;
-    /* color :rgb(146, 142, 138); */
 }
 .toggle{
     position: relative;
@@ -97,6 +96,16 @@ ul li a{
 ul li a:hover{
     background: #f6f6f6;
     color: red;
-    transition: 0s;
-    
+    transition: 0s; 
+}
+@media (min-width: 1024px){
+    .nav__container{
+        width: 200px;  
+    }
+    .toggle{
+        justify-content: end;
+    }
+    ul li a{
+        text-align: start;
+    }
 }

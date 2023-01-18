@@ -1,14 +1,18 @@
+.tamaño{
+    padding: 1rem 2rem;
+    height: 100vh;
+}
 .container__skills{
     width: 100%;
-    height: 95vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .logo-skills{
     width: 150px;
     height: 150px;
+    margin: 2rem 0;
 }
 .correcion{
     width: 185px;

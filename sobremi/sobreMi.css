@@ -16,7 +16,7 @@
 
 @media (min-width: 1024px){
     .container__sobre__mi{
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
     }
     .sobre__mi{
         height: 300px;

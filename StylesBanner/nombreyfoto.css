@@ -68,6 +68,7 @@
         letter-spacing: 0.9rem;
         color: gray;
         font-size: 1.5rem;
+        transition: 0.5s;
     }
 
     .nombre {
@@ -86,6 +87,7 @@
         color: gray;
         -webkit-text-stroke: 0;
         font-size: 1.5rem;
+        transition: 0.5s;
     }
 
     .nombre-apellido-paterno:hover{
@@ -96,4 +98,11 @@
         color: gray;
         -webkit-text-stroke: 0.1vw;
     }
+    .saludo:hover{
+        letter-spacing: 1.5rem;
+    }
+    .nombre-apellido-titulo:hover{
+        letter-spacing: 1.5rem;
+    }
+    
 }

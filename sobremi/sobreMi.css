@@ -1,27 +1,30 @@
 
 .container__sobre__mi{
     width: 100%;
-    height: 100vh;
+    height:calc( 100vh - 68px);
     color: rgba(204, 200, 197, 0.774);
     text-align: justify;
-    padding: 1rem 2rem;  
+    padding: 0 2rem;  
 } 
 .sobre__mi{
     background-color: rgba(37, 37, 37, 0.295);
     border-radius: 20px;
     padding: 1rem; 
     margin: 1rem 0;
-    height: 400px;
-    font-family: 'Antonio', sans-serif;
+    height: 60vh;
+    text-transform: uppercase;
 }
 
 @media (min-width: 1024px){
     .container__sobre__mi{
         display: flex;
+        align-items: center;
         
     }
     .sobre__mi{
-        height: 300px;
+        width: 100%;
+        height: 80vh;
+        font-size: 25px;
     }
     
 }

@@ -1,6 +1,7 @@
 #Skills{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    margin: 10px;
 }
 .container__skills{
     display: flex;

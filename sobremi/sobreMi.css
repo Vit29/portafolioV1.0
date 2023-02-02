@@ -1,30 +1,182 @@
+/* #section_sobre_mi{
+    height: auto;
+    margin: 10px;
+} */
 
 .container__sobre__mi{
     width: 100%;
-    height:calc( 100vh - 68px);
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    'titulo'
+    'descripcion'
+    'redes'
+    'formulairo';
+    grid-template-rows: 5% auto 10% auto;
     color: rgba(204, 200, 197, 0.774);
     text-align: justify;
-    padding: 0 2rem;  
-} 
+    
+    /* padding: 1rem; */
+}
+.sobre__mi_h1{
+    grid-area: titulo;
+}
 .sobre__mi{
+    grid-area: descripcion;
     background-color: rgba(37, 37, 37, 0.295);
     border-radius: 20px;
     padding: 1rem; 
     margin: 1rem 0;
-    height: 60vh;
+    height: auto;
     text-transform: uppercase;
 }
 
-@media (min-width: 1024px){
-    .container__sobre__mi{
-        display: flex;
-        align-items: center;
-        
+/* botones pulsantes */
+
+.container{
+    grid-area: redes;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.pulsante{
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    animation: pulsante 1.5s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color:nth-child(1){
+    background-color: rgb(42, 42, 44);
+    animation: pulsante-git 1.5s infinite;
+}
+.color:nth-child(2){
+    background-color: rgb(5, 46, 65);
+    animation: pulsante-linkedin 1.5s infinite;    
+}
+/* .color:nth-child(4){
+    background-color: rgb(255, 0, 166);
+    animation: pulsante-instagram 1.5s infinite;
+}
+.color:nth-child(5){
+    background-color: rgb(0, 156, 23);
+    animation: pulsante-whatsup 1.5s infinite;    
+} */
+.color:nth-child(3){
+    background-color: rgb(255, 0, 0);
+    animation: pulsante-youtube 1.5s infinite;    
+}
+
+
+.logo{
+    width: 30px;
+    height: 30px;
+}
+.logo-git{
+    width: 40px;
+    height: 40px;
+}
+.logo-instagram{
+    width: 30px;
+    height: 30px;
+}
+.logo-whatsup{
+    width: 30px;
+    height: 30px;
+}
+.logo-linkedin{
+    width: 30px;
+    height: 30px;
+}
+.logo-youtube{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+@keyframes pulsante-face{
+    0%{
+        box-shadow: rgb(15, 15, 255) 0 0 0 0 ;
     }
-    .sobre__mi{
+    100%{
+        box-shadow: rgba(15, 15, 255, 0) 0 0 0 16px;
+    }
+}
+@keyframes pulsante-git{
+    0%{
+        box-shadow: rgb(42, 42, 44) 0 0 0 0;
+    }
+    100%{
+        box-shadow: rgba(15, 15, 255, 0) 0 0 0 16px;
+    }
+}
+@keyframes pulsante-linkedin{
+    0%{
+        box-shadow: rgb(5, 46, 65)  0 0 0 0;
+    }
+    100%{
+        box-shadow: rgba(5, 46, 65, 0) 0 0 0 16px;
+    }
+}
+@keyframes pulsante-instagram{
+    0%{
+        box-shadow: rgb(255, 0, 166) 0 0 0 0;
+    }
+    100%{
+        box-shadow: rgba(15, 15, 255, 0) 0 0 0 16px;
+    }
+}
+@keyframes pulsante-whatsup{
+    0%{
+        box-shadow: rgb(0, 156, 23) 0 0 0 0;
+    }
+    100%{
+        box-shadow: rgba(15, 15, 255, 0) 0 0 0 16px;
+    }
+}
+@keyframes pulsante-youtube{
+    0%{
+        box-shadow: rgb(255, 2, 2) 0 0 0 0;
+    }
+    100%{
+        box-shadow: rgba(255, 0, 0, 0) 0 0 0 16px;
+    }    
+}
+@media (min-width: 1024px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.formulario{
+    grid-area: formulario;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+/* COMPUTADORA */
+
+@media (min-width: 1024px){
+    /* .container__sobre__mi{
+        
+        
+    } */
+    .sobre__mi{
+        width: 30%;
         height: 80vh;
         font-size: 25px;
     }
     
 }
+

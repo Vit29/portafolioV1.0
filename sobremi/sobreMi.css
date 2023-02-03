@@ -1,32 +1,27 @@
-/* #section_sobre_mi{
-    height: auto;
-    margin: 10px;
-} */
 
 .container__sobre__mi{
     width: 100%;
     height: auto;
     display: grid;
     grid-template-areas: 
-    'titulo'
-    'descripcion'
-    'redes'
-    'formulairo';
+        'titulo titulo'
+        'descripcion descripcion' 
+        'redes redes'
+        'formulario formulario';
     grid-template-rows: 5% auto 10% auto;
     color: rgba(204, 200, 197, 0.774);
     text-align: justify;
-    
-    /* padding: 1rem; */
+    padding: 0 1rem;
 }
 .sobre__mi_h1{
     grid-area: titulo;
+    padding: 10px;
 }
 .sobre__mi{
     grid-area: descripcion;
     background-color: rgba(37, 37, 37, 0.295);
     border-radius: 20px;
     padding: 1rem; 
-    margin: 1rem 0;
     height: auto;
     text-transform: uppercase;
 }
@@ -38,7 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    height: 100%;
     justify-content: space-around;
     align-items: center;
 }
@@ -149,33 +144,92 @@
         box-shadow: rgba(255, 0, 0, 0) 0 0 0 16px;
     }    
 }
-@media (min-width: 1024px){
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-around;
-    }
-}
 
 .formulario{
     grid-area: formulario;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: rgb(47, 81, 107);
+    border-radius: 10px;
+    font-family: initial;   
+}
+
+.form__container{
+    width: 100%;
+    height: auto;
+}
+
+form p{  
+    margin: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p input, textarea, button{
+    width: 100%;
+    height:30px;
+    border-radius: 10px;
+    border-style: none;
+    border: solid rgb(243, 241, 245);
+    border-width: 2px;
+    background-color: rgba(255, 255, 255, 0);
     padding: 10px;
-    
+    color: white;
+    outline: none;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.63);
+}
+p textarea{
+    height: 70px;
+}
+button{
+    height: 30px;
+    width: 80px;
+    padding: 0;
 }
 
 /* COMPUTADORA */
 
 @media (min-width: 1024px){
-    /* .container__sobre__mi{
+    #section_sobre_mi{
+    height: 100vh;
+    margin: 10px 0;
+    }
+    .container__sobre__mi{
+        grid-template-areas: 
+        'titulo titulo'
+        'descripcion formulario' 
+        'descripcion redes';
+        grid-template-columns: 60% auto;
+        grid-template-rows: auto auto 15% ;
         
-        
-    } */
+    }
     .sobre__mi{
-        width: 30%;
-        height: 80vh;
+        width: 95%; 
+        height: 98%;
+        margin: 0 auto;
         font-size: 25px;
+    }
+
+    .formulario{
+        width: 95%;
+        margin: 0;
+    }
+    /* .form__container{
+       
+    } */
+
+    form p{  
+        margin: 38px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .aviso{
+        margin: 0;
     }
     
 }

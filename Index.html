@@ -103,48 +103,53 @@
         <div class="formulario">
             <h1>Contactos</h1>
             <form class="form__container" action="submeter-formulario.php" method="post">
-                <p>
-                    <label for="nombre" class="colocar_nombre">
-                        <span class="obligatorio"></span>
-                    </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                        placeholder="Escribe tu nombre">
-                </p>
+               <div class="nombre__email">
+                    <p >
+                        <label for="nombre" class="colocar_nombre">
+                            <span class="obligatorio"></span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                            placeholder="Escribe tu nombre">
+                    </p >
 
-                <p>
-                    <label for="email" class="colocar_email">
-                        <span class="obligatorio"></span>
-                    </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio"
-                        placeholder="Escribe tu Email">
-                </p>
+                    <p>
+                        <label for="email" class="colocar_email">
+                            <span class="obligatorio"></span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio"
+                            placeholder="Escribe tu Email">
+                    </p>
+                </div>
 
-                <p>
-                    <label for="telefone" class="colocar_telefono">
-                    </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>
-                <p>
-                    <label for="asunto" class="colocar_asunto">
-                        <span class="obligatorio"></span>
-                    </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
-                        placeholder="Escribe un asunto">
-                </p>
-
-                <p>
-                    <label for="mensaje" class="colocar_mensaje">
-                        <span class="obligatorio"></span>
-                    </label>
-                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                        placeholder="Deja aquí tu comentario..."></textarea>
-                </p>
-                <p>
+                <div class="telefono__asunto">
+                    <p>
+                        <label for="telefone" class="colocar_telefono">
+                        </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>
+                    <p>
+                        <label for="asunto" class="colocar_asunto">
+                            <span class="obligatorio"></span>
+                        </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                            placeholder="Escribe un asunto">
+                    </p>
+                </div>
+                
+                    <p class="asunto">
+                        <label for="mensaje" class="colocar_mensaje">
+                            <span class="obligatorio"></span>
+                        </label>
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                            placeholder="Deja aquí tu comentario..."></textarea>
+                    </p>
+            
+                <p class="boton__enviar">
                     <button type="submit" name="enviar_formulario" id="enviar">Enviar
                         <!-- <p>Enviar</p> -->
                     </button>
                 </p>
-                <p class="aviso">
+                <p class="campos__oblicatorios">
                     <span class="obligatorio"> *los campos son obligatorios. </span>
                 </p>
 

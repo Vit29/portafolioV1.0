@@ -209,19 +209,35 @@ button{
     }
     .sobre__mi{
         width: 95%; 
-        height: 98%;
+        height: 95%;
         margin: 0 auto;
         font-size: 25px;
     }
 
     .formulario{
         width: 95%;
+        height: fit-content;
         margin: 0;
-    }
-    /* .form__container{
-       
-    } */
 
+    }
+    .form__container{
+       display: flex;
+       flex-wrap: wrap;
+       
+    }
+    .nombre__email, .telefono__asunto{
+        width: 50%;
+    }
+    .asunto{
+        width: 100%;
+        margin: 0 10px;
+    }
+    .boton__enviar{
+        width: 100%;
+    }
+    .campos__oblicatorios{
+        margin: 0 auto;
+    }
     form p{  
         margin: 38px 10px;
         display: flex;
@@ -230,6 +246,9 @@ button{
     }
     .aviso{
         margin: 0;
+    }
+    .container{
+        align-items: initial;
     }
     
 }
